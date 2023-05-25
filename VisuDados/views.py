@@ -5,8 +5,10 @@ from .models import *
 def index(request):
     dt = [] 
     la = []
+    k = []
     val = Data.objects.all()
     for v in val:
         dt.append(v.dado)
         la.append(int(v.label))
-    return render(request, 'index.html', {'dt2': dt, 'la2': la})
+        k.append(v.dado2)
+    return render(request, 'index.html', {'dt2': dt, 'la2': la, 'k2': k})

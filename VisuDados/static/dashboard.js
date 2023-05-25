@@ -15,10 +15,17 @@
       datasets: [{
         data: dt,
         lineTension: 0.3,
-        backgroundColor: '#322c8e',
-        borderColor: '#322c8e',
+        backgroundColor: '#4201e4',
+        borderColor: '#4201e4',
         borderWidth: 4,
-        pointBackgroundColor: '#fc370c'
+        pointBackgroundColor: '#4201e4'
+      }, {
+        data: k,
+        lineTension: 0.3,
+        backgroundColor: '#aa2b14',
+        borderColor: '#aa2b14',
+        borderWidth: 4,
+        pointBackgroundColor: '#aa2b14'
       }]
     },
     options: {
@@ -39,7 +46,7 @@
         },
         subtitle: {
           display: true,
-          text: "Experimentos realizados por alunos da disciplina de Química III",
+          text: "Experimentos realizados por alunos da disciplina de Química III 2023.1",
           color: "#000000",
           font: {
             size: 12,
