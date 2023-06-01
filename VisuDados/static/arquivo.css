@@ -1,0 +1,43 @@
+.circulo1 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #4203e4;
+    margin: 30px 10px 0px 10px;
+}
+
+.circulo2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #aa2b14;
+    margin: 30px 10px 0px 10px;
+}
+p {
+    margin: -22px 0px 0px 50px;
+    padding-right: 20px;
+    color: white;
+}
+body {
+    background-image: url(./quimicaweb.jpg);
+}
+canvas {
+    background-color: white;
+    max-width: 1000px;
+    min-height: 300px;
+    padding-right: 20px;
+    border: 2px solid white;
+    border-radius: 20px 0px 0px 20px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+    display: flex;
+    margin-block: 20px;
+}
+.fundo{
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 0px 20px 20px 0px;
+    margin: 24px 20px 24px 0px;
+}

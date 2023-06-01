@@ -9,14 +9,15 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
     <link href="{% static 'assets/dist/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'dashboard.css' %}" rel="stylesheet">
+    <link href="{% static 'arquivo.css' %}" rel="stylesheet">
     <title>Gráfico</title>
 </head>
 <body>
-    <canvas class="my-4 w-100" id='myChart' width="900" height="380"></canvas>
-    <br>
-    <br>
-    <canvas class="my-4 w-100" id='myChart' width="900" height="380"></canvas>
-    oi
+    <ul>
+        <li><canvas class="my-4 w-100" id='myChart' width="900" height="380"></canvas></li>
+        <li class="fundo"><p class="circulo1"><p>Dados dos experimentos</p></p>
+            <p class="circulo2"><p>Dados com o K</p></p></li>
+    </ul>
     <script>
         const dt = {{dt2}};
         const la = {{la2}};

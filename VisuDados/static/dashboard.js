@@ -16,7 +16,7 @@
         data: dt,
         lineTension: 0.3,
         backgroundColor: '#4201e4',
-        borderColor: '#4201e4',
+        borderColor: '#4203e4',
         borderWidth: 4,
         pointBackgroundColor: '#4201e4'
       }, {
