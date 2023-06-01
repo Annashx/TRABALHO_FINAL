@@ -9,6 +9,6 @@ def index(request):
     val = Data.objects.all()
     for v in val:
         dt.append(v.dado)
-        la.append(int(v.label))
         k.append(v.dado2)
+        la.append(int(v.label))
     return render(request, 'index.html', {'dt2': dt, 'la2': la, 'k2': k})
