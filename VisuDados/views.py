@@ -6,15 +6,15 @@ from sklearn.metrics import mean_squared_error
 
 
 def index(request):
-    dt = [] 
-    la = []
-    k = []
+    temp = [] 
+    conc = []
+    ns = []
     val = Data.objects.all()
     for v in val:
-        dt.append(v.dado)
-        k.append(v.dado2)
-        la.append(v.label)
-    return render(request, 'index.html', {'dt2': dt, 'la2': la, 'k2': k})
+        temp.append(v.temperatura)
+        conc.append(v.concentracao)
+        ns.append(v.temperatura * v.concentracao)
+    return render(request, 'index.html', {'temp2': temp, 'conc2': conc, 'ns2': ns})
 
 def achak(c, t):
     reg = LinearRegression().fit(c.reshape(-1, 1), t)

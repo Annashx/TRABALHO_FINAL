@@ -4,28 +4,20 @@
   'use strict'
 
   feather.replace({ 'aria-hidden': 'true' })
-  console.log(la)
   // Graphs
   const ctx = document.getElementById('myChart')
   // eslint-disable-next-line no-unused-vars
   const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: la,
+      labels: conc,
       datasets: [{
-        data: dt,
+        data: temp,
         lineTension: 0.3,
         backgroundColor: '#4201e4',
         borderColor: '#4203e4',
-        borderWidth: 4,
+        borderWidth: 0,
         pointBackgroundColor: '#4201e4'
-      }, {
-        data: k,
-        lineTension: 0.3,
-        backgroundColor: '#aa2b14',
-        borderColor: '#aa2b14',
-        borderWidth: 4,
-        pointBackgroundColor: '#aa2b14'
       }]
     },
     options: {
